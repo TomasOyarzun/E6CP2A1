@@ -10,3 +10,5 @@
 #    invertir el orden de los elementos en un arreglo.
 
 a = [1,2,3,9,1,4,5,2,3,6,6]
+a.delete(6)
+a.delte(1)
