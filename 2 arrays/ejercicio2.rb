@@ -9,6 +9,46 @@
 # 5. Utilizando un arreglo vacío auxiliar y operaciones de push y pop:
 #    invertir el orden de los elementos en un arreglo.
 
-a = [1,2,3,9,1,4,5,2,3,6,6]
-a.delete(6)
-a.delte(1)
+a = [1, 2, 3, 9, 1, 4, 5, 2, 3, 6, 6]
+puts 'Arreglo original.'
+print a
+puts ''
+puts '---------------------------------'
+a.delete_at(-1)
+puts 'Arreglo sin el último elemento.'
+print a
+puts ''
+puts '---------------------------------'
+a.delete_at(0)
+puts 'Arreglo sin el primer elemento.'
+print a
+puts ''
+puts '---------------------------------'
+if a.length.even?
+	a.delete_at((a.length / 2) - 1)
+else
+	a.delete_at(a.length / 2)
+end
+puts 'Arreglo sin el elemento de la posición media.'
+print a
+puts ''
+puts '---------------------------------'
+while a[-1] != 1 do
+	a.delete_at(-1)
+end
+puts 'Arreglo con los últimos elementos borrados hasta encontrar el número 1.'
+print a
+puts ''
+puts '---------------------------------'
+b = []
+for x in 1..a.length
+	b.push(a.pop)
+end
+puts 'Arreglo auxiliar invertido'
+print b
+puts ''
+
+=begin
+Opción de eliminar un elemento.
+a.slice!(a.index(6))
+=end
