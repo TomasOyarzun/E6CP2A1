@@ -9,6 +9,6 @@ Se tiene un arreglo de productos, se pide que el output sea:
 products = %w(Producto1 Producto2 Producto3 Producto4)
 
 html = ''
-products.each_with_index {|elem, i| html += "<div class='product'>#{products[i]}</div>\n"}
+products.each_with_index {|elem, i| html += "<div class='product'> #{products[i]} </div>\n"}
 puts html
 
