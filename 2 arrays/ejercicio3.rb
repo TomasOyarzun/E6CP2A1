@@ -7,7 +7,7 @@
 a = [1,2,3,9,1,4,5,2,3,6,6]
 #Metodo para eliminar todos los números pares del arreglo.
 def removeifeven(array)
-	return array.each_with_index{|elem, i| array.delete(elem) if elem.even?}
+	return array.each{|elem| array.delete(elem) if elem.even?}
 end
 #Metodo para sumar todos los elementos del arreglo.
 def sum(array)
