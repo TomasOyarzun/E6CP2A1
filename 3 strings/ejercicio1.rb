@@ -5,3 +5,9 @@
 
 cadena = 'Hola Mundo!'
 caracter = 'o'
+
+def check_if (word, spoiler)
+	word.each_char{ |x| puts 'Si existe' if x.include?(spoiler) }	
+end
+
+check_if(cadena, caracter)
