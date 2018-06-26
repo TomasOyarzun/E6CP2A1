@@ -3,8 +3,7 @@
 # y no obtener errores ni warnings.
 
 def par(x)
-    return true if x.even?
-    return false if x.odd?
+	x.even?
 end
 
 puts par(2)
