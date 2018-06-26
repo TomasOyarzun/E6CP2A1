@@ -3,7 +3,7 @@
 
 def random
   result = [true, false].sample
-  return result
+  result
 end
 
 if random == true
